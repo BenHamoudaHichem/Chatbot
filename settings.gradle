@@ -1,0 +1,2 @@
+rootProject.name='HechBoT'
+include ':app'

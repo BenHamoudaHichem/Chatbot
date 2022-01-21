@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/answer_bloc"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="6dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded_corner1"
+        android:elevation="4dp"
+        app:itemTextColor="@color/cardview_light_background"
+        app:labelVisibilityMode="unlabeled"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/Platform.MaterialComponents.Light"
+                    android:textColor="@color/color_black"
+                    android:hint="Talk with HechBot"
+                    android:padding="16dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="25dp"
+android:theme="@style/Platform.MaterialComponents.Light"
+                    android:background="@drawable/rounded_corner1"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_send"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+       </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
